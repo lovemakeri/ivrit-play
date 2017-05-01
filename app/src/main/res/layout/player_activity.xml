@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    style="@style/PlayerTheme">
+
+
+
+
+
+
+
+
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:gravity="center_horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+      android:id="@+id/topbuttons"
+      android:paddingBottom="0dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Часть I"
+        android:id="@+id/part1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="part1click"
+        android:layout_gravity="left"
+        android:background="#3300CC"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Часть II"
+        android:id="@+id/part2"
+        android:onClick="part2click"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#333333"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Часть III"
+        android:id="@+id/part3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="part3click"
+        android:background="#333333"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="12dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Словарь"
+        android:id="@+id/dictionary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="dictionaryclick"
+        android:textSize="12dp"
+        android:background="#333333" />
+
+
+
+  </LinearLayout>
+
+
+
+  <ListView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/listView"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+           android:layout_below="@+id/part1"
+      android:layout_gravity="left|center_vertical"
+      android:clickable="true"
+      android:layout_column="0"
+      android:layout_marginTop="60dp"
+      android:layout_marginBottom="80dp"
+      android:visibility="visible"
+                 />
+
+  <ListView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/listView2"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:layout_below="@+id/part1"
+      android:layout_gravity="left|center_vertical"
+      android:clickable="true"
+      android:layout_column="0"
+      android:layout_marginTop="60dp"
+      android:layout_marginBottom="80dp"
+
+
+      android:visibility="gone" />
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/part1"
+        android:layout_gravity="left|center_vertical"
+        android:clickable="true"
+        android:layout_column="0"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="85dp"
+
+
+        android:visibility="gone" />
+
+
+
+
+
+
+  <WebView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/webView"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true"
+      android:visibility="gone" />
+
+  <Button
+      android:layout_width="42dp"
+      android:layout_height="42dp"
+      android:text="x"
+      android:id="@+id/closedictionary"
+      android:onClick="Closeclick"
+      android:layout_gravity="top|right"
+      android:enabled="false"
+      android:visibility="gone" />
+
+  <ProgressBar
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/progressBar"
+      android:layout_gravity="left|bottom"
+      android:visibility="gone"
+      android:progress="0"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:maxHeight="10dip"
+      android:minHeight="10dip" />
+
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/linearLayout3"
+      android:layout_gravity="bottom|center_horizontal" android:layout_above="@+id/linearLayout1"
+      android:weightSum="1"
+      android:layout_marginBottom="42dp">
+  <TextView tools:ignore="SmallSp" android:id="@+id/songName" android:layout_width="wrap_content" android:layout_height="50dp" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_above="@+id/topbuttons" android:text="Чтобы начать, выберите урок" android:autoText="false" android:layout_gravity="bottom" android:layout_marginBottom="1dp" />
+  </LinearLayout>
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/linearLayout1"
+        android:layout_gravity="bottom|center_horizontal" android:layout_above="@+id/linearLayout2"
+        android:weightSum="1"
+        android:layout_marginBottom="30dp">
+
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="0:00" android:id="@+id/currentPosition" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" android:layout_marginLeft="5dp" android:textColor="@color/white" />
+      <ImageButton android:id="@+id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:onClick="backforward" android:src="@android:drawable/ic_media_rew" />
+      <ImageButton android:id="@+id/previewPlayBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp"
+          android:src="@android:drawable/ic_media_play" />
+      <ImageButton android:id="@+id/btn_forword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:onClick="forward" android:src="@android:drawable/ic_media_ff" />
+      <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:text="0:00" android:id="@+id/totalDuration" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:layout_marginRight="5dp" android:layout_marginLeft="3dp" android:textColor="@color/white" />
+    </LinearLayout>
+
+
+
+
+
+
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_horizontal" android:orientation="horizontal" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" android:id="@+id/linearLayout2"  android:layout_gravity="center_horizontal|bottom">
+         <SeekBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/seekBar" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:splitTrack="false" android:thumbTint="@color/white" android:progressTint="@color/white" />
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

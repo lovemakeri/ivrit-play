@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2014 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The user visible name of the application. [CHAR LIMIT=20] -->
+    <string name="application_name">Иврит по методу Пимслера</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="favorites">Favorites</string>
+
+    <string-array name="names">
+        <item>Урок 1</item>
+        <item>Урок 2</item>
+        <item>Урок 3</item>
+        <item>Урок 4</item>
+        <item>Урок 5</item>
+        <item>Урок 6</item>
+        <item>Урок 7</item>
+        <item>Урок 8</item>
+        <item>Урок 9</item>
+        <item>Урок 10</item>
+        <item>Урок 11</item>
+        <item>Урок 12</item>
+        <item>Урок 13</item>
+        <item>Урок 14</item>
+        <item>Урок 15</item>
+        <item>Урок 16</item>
+        <item>Урок 17</item>
+        <item>Урок 18</item>
+        <item>Урок 19</item>
+        <item>Урок 20</item>
+        <item>Урок 21</item>
+        <item>Урок 22</item>
+        <item>Урок 23</item>
+        <item>Урок 24</item>
+        <item>Урок 25</item>
+        <item>Урок 26</item>
+        <item>Урок 27</item>
+        <item>Урок 28</item>
+        <item>Урок 29</item>
+        <item>Урок 30</item>
+    </string-array>
+    <string-array name="files">
+        <item>lesson-001.mp3</item>
+        <item>lesson-002.mp3</item>
+        <item>lesson-003.mp3</item>
+        <item>lesson-004.mp3</item>
+        <item>lesson-005.mp3</item>
+        <item>lesson-006.mp3</item>
+        <item>lesson-007.mp3</item>
+        <item>lesson-008.mp3</item>
+        <item>lesson-009.mp3</item>
+        <item>lesson-010.mp3</item>
+        <item>lesson-011.mp3</item>
+        <item>lesson-012.mp3</item>
+        <item>lesson-013.mp3</item>
+        <item>lesson-014.mp3</item>
+        <item>lesson-015.mp3</item>
+        <item>lesson-016.mp3</item>
+        <item>lesson-017.mp3</item>
+        <item>lesson-018.mp3</item>
+        <item>lesson-019.mp3</item>
+        <item>lesson-020.mp3</item>
+        <item>lesson-021.mp3</item>
+        <item>lesson-022.mp3</item>
+        <item>lesson-023.mp3</item>
+        <item>lesson-024.mp3</item>
+        <item>lesson-025.mp3</item>
+        <item>lesson-026.mp3</item>
+        <item>lesson-027.mp3</item>
+        <item>lesson-028.mp3</item>
+        <item>lesson-029.mp3</item>
+        <item>lesson-030.mp3</item>
+    </string-array>
+
+</resources>

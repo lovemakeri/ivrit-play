@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="glass">#33fafafa</color>
+    <color name="main_color">#904390</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#eeeeee</color>
+    <color name="dark_transparency">#9a000000</color>
+    <color name="dark">#ff3a3a3a</color>
+    <color name="transparent">#00000000</color>
+    <color name="product_list_item_bg">#ffffff</color>
+    <color name="view_divider_color">#BABABA</color>
+    <drawable name="red_color">#ff0000</drawable>
+    <drawable name="white_color">#ffffff</drawable>
+    <drawable name="orange_color">#ffffbb33</drawable>
+      <color name="light_blue">#ff64c2f4</color>
+</resources>
